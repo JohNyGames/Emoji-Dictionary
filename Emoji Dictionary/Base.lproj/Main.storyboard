@@ -68,17 +68,37 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MhA-za-oIS">
+                                <rect key="frame" x="152" y="447" width="71" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of Inception" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3LJ-JL-wrW">
+                                <rect key="frame" x="121.5" y="498" width="132" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Xf2-99-P0s" firstAttribute="top" secondItem="Roi-t9-fSq" secondAttribute="bottom" constant="50" id="Kii-MV-mW9"/>
                             <constraint firstItem="Roi-t9-fSq" firstAttribute="centerX" secondItem="pjj-rG-54q" secondAttribute="centerX" id="Qt8-El-4os"/>
+                            <constraint firstItem="MhA-za-oIS" firstAttribute="centerX" secondItem="pjj-rG-54q" secondAttribute="centerX" id="Tfq-Js-Axu"/>
                             <constraint firstItem="Roi-t9-fSq" firstAttribute="top" secondItem="5eU-Wf-pVI" secondAttribute="bottom" constant="40" id="ZQ4-kR-rLI"/>
+                            <constraint firstItem="3LJ-JL-wrW" firstAttribute="centerX" secondItem="pjj-rG-54q" secondAttribute="centerX" id="a7Y-v8-cIx"/>
                             <constraint firstItem="Roi-t9-fSq" firstAttribute="centerX" secondItem="pjj-rG-54q" secondAttribute="centerX" id="bER-R5-Aii"/>
+                            <constraint firstItem="MhA-za-oIS" firstAttribute="top" secondItem="Xf2-99-P0s" secondAttribute="bottom" constant="30" id="bl5-yf-wiD"/>
+                            <constraint firstItem="3LJ-JL-wrW" firstAttribute="centerX" secondItem="pjj-rG-54q" secondAttribute="centerX" id="dis-JR-Fzy"/>
                             <constraint firstItem="Xf2-99-P0s" firstAttribute="centerX" secondItem="pjj-rG-54q" secondAttribute="centerX" id="ggx-ON-nxM"/>
+                            <constraint firstItem="3LJ-JL-wrW" firstAttribute="top" secondItem="MhA-za-oIS" secondAttribute="bottom" constant="30" id="nk1-D0-XkF"/>
+                            <constraint firstItem="MhA-za-oIS" firstAttribute="centerX" secondItem="pjj-rG-54q" secondAttribute="centerX" id="xHp-af-8Sw"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="category" destination="MhA-za-oIS" id="4bZ-fx-Fb0"/>
+                        <outlet property="dateLabel" destination="3LJ-JL-wrW" id="vNN-BS-uOG"/>
                         <outlet property="definition" destination="Xf2-99-P0s" id="dtk-xC-4xY"/>
                         <outlet property="emojiLabel" destination="Roi-t9-fSq" id="b4A-oK-CFy"/>
                     </connections>
